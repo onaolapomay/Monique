@@ -391,13 +391,12 @@ main a{
     margin-top: 30px;
     margin-bottom: 30px;
     padding-left: 20px;
-    height: 55px;
 }
 
 #button{
     background-color: #000000;
     color: #f7f7f8;
-    white-space: nowrap;
+    white-space: normal;
     /* display: inline-block; */
     font-weight: 600;
     font-size: 1rem;
@@ -411,6 +410,10 @@ main a{
 
 .sorted{
     margin-left: 10px;
+}
+.sorted-section{
+    display: flex;
+    gap: 5px;
 }
 
 .dropdown{
@@ -444,6 +447,10 @@ main a{
         height: auto;
     }
 
+    .filter-top img{
+        height: 30px;
+    }
+
     .filter-buttons{
         display: flex;
         flex-wrap: wrap;
@@ -457,8 +464,14 @@ main a{
     }
 
     .sorted-section{
-        margin-top: 15px;
+        display: flex;
+        /* margin-top: 5px; */
         text-align: center;
+    }
+
+    .sorted-section p{
+        margin-top: 30px;
+        
     }
 
     .dropdown{
