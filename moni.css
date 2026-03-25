@@ -28,180 +28,222 @@ header{
     display: flex;
     justify-content: center;
     background-color: #f9e2e7;
-    padding-top: 10px;
+    padding: 10px;
     position: sticky;
-    backdrop-filter: blur(10px);
     top: 0;
     z-index: 5;
 }
+
 header p{
+    margin: 0;
+    line-height: 1.3;
     font-size: small;
-    font-weight: 400;
     font-style: italic;
-    word-spacing: 2px;
 }
 
-header p #enroll{
-    color: black;
-}
+/* SECOND HEADER */
 
 .second-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* padding: 5px; */
     background-color: #f7f7f8;
-
-}
-.second-header span{
-    font-family: outfit;
-    border-bottom: solid 5px #f9e2e7;
-}
-
-.second-header #pink{
-    /* position: absolute; */
-    color: #000000;
-    font-weight: 900;
-    text-decoration: none;
     padding: 10px;
-}
-.second-header a, nav a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+
 }
 
-/*ICON STYLING */
-.second-header #icons{
-    word-spacing: 25px;
+
+/* TOP ROW */
+.top-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
-.second-header #icons{
-    margin: 0 5px;
+.logo-text{
+    font-family: outfit;
+    border-bottom: 4px solid #f9e2e7;
 }
 
-/* THIRD HEADER*/
+#pink{
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-title{
+    display: none;
+}
+/* BOTTOM ROW */
+.bottom-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.left{
+    display: flex;
+    gap: 15px;
+    font-size: 22px;
+}
+
+.right{
+    display: flex;
+    gap: 15px;
+}
+
+/* THIRD HEADER */
 
 #third-header{
     display: flex;
-    /* align-items: center; */
-    gap:450px;
-    padding-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 #flag{
-    justify-content: space-between;
-    padding: 5px;
-    gap: 5px;
+    display: flex;
+    gap: 10px;
 }
+
 .nigeria{
-    border-right: dotted 3px #000000;
-    margin: auto;
+    border-right: 2px dotted black;
 }
+
 .en{
-    border-right: dotted 3px #000000;
-    padding: 5px;
-    margin: auto;
-    width: auto;
-    font-style: oblique;
-    /* padding-top: 5px; */
-}
-.ngn{
-    width: auto;
-    /* padding-top: 6px; */
-    margin: auto;
-    font-style: oblique;
+    border-right: 2px dotted black;
+    padding-right: 5px;
 }
 
-#flag a{
-    text-decoration: none;
-    color: #000000;
-}
-
-#third-header h2{
-    padding-top: 10px;
-    line-height: 20px;
-    letter-spacing: .05em;
-    text-transform: inherit;
+.desktop-title{
     font-size: 25px;
     font-family: monospace;
-    font-weight: 700;
-}
-#third-header h2 a{
-    text-decoration: none;
-    color: #000000;
-}
-#third-header a:hover{
-    color: burlywood;
-}
-form.nosubmit {
-    border: none;
-    padding: 0;
-    width: 80%;
-}
-   
-input.nosubmit {
-    width: 100%;
-    padding: 9px 4px 9px 40px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
-    font-size: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.nosubmit{
-    width: 190px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border: none;
-    
+.search-form input{
+    border: 2px solid #ccc;
+    padding: 8px;
 }
 
-/*NAVBAR*/
+/* NAV */
 
 nav{
+    background: black;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: black;
-    margin-top: 40px;
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+    padding: 5px;
 }
 
 nav a{
-    padding: 5px 10px;
-}
-
-ul li{
-    position: relative;
-    width: 200px;
-    height: 50px;
-    background: #222;
-    border-radius: 10px;
-    display: flex;
-    gap: 30px;
-    padding-top: 15px;
-    justify-content: center;
-    
-} 
-
-ul li a{
-    /* position: relative; */
-    /* display: inline-block; */
-    font-size: 1.1em;
-    font-weight: 500;
     color: white;
+    padding: 10px;
     text-decoration: none;
-    padding: 5px;
-    line-height: normal;
-    transition: 0.5s ease;
-    border-bottom: 3px solid transparent;
-    /* z-index: 1; */
 }
 
-ul li a:hover, ul li a:active{
+nav a:hover{
     color: aqua;
-    border-bottom: 3px solid aqua;
 }
 
+/* MOBILE MENU */
+
+.mobile-menu{
+    display: none;
+    flex-direction: column;
+    background: black;
+}
+
+.mobile-menu a{
+    color: white;
+    padding: 15px;
+    border-bottom: 1px solid #333;
+}
+
+/* 📱 MOBILE */
+
+@media (max-width: 768px){
+
+    nav{
+        display: none;
+    }
+
+    .mobile-menu a{
+        font-size: 0.7rem;
+        padding: 6px 4px;
+        letter-spacing: 0.03rem;
+        font-family: monospace;
+        text-decoration: none;
+    }
+
+    .mobile-menu.active{
+        display: flex;
+    }
+
+    .search-form{
+        display: none;
+    }
+
+    .desktop-title{
+        display: none;
+    }
+
+    .mobile-title{
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        font-size: smaller;
+        font-family: monospace;
+    }
+
+    .second-header{
+        background-color: white;
+        position: relative;
+    }
+
+    #third-header{
+        display: none;
+    }
+
+    #flag{
+        display: none;
+    }
+}
+
+/* 💻 DESKTOP */
+
+@media (min-width: 769px){
+
+    .second-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top-row{
+        justify-content: flex-start;
+    }
+
+    .bottom-row{
+        margin-top: 0;
+    }
+
+    .left{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+
+    header{
+        display: none;
+    }
+}
 
 
 /*MAIN*/
