@@ -423,6 +423,50 @@ main a{
     background-color: bisque;
 }
 
+@media (max-width: 600px) {
+
+    #border{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .filter-top{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .filter-top img{
+        width: 30px;
+        height: auto;
+    }
+
+    .filter-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    #button{
+        font-size: 12px;
+        padding: 5px 8px;
+        border-radius: 6px;
+    }
+
+    .sorted-section{
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .dropdown{
+        margin-top: 5px;
+    }
+}
+
+
 #card-group{
     display: flex;
     gap: 30px;
