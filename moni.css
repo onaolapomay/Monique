@@ -742,10 +742,15 @@ main a{
 
 
 #card-group2{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    padding: 100px;
-    margin-top: 100px;
+    padding: 60px;
+    margin-top: 180px !important;
+}
+
+#card-info{
+    margin-top: auto;
 }
 
 #card-group2 .card-innertext{
@@ -779,6 +784,48 @@ main a{
 }
 #card-group2 a:hover{
     color: red;
+}
+
+
+@media (max-width: 600px){
+    #card-group2{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+        gap: 10px;
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        /* box-sizing: border-box; */
+        row-gap: 200px;
+    }
+
+    .cardbox5,
+    .cardbox6,
+    .cardbox7,
+    .cardbox8{
+        height: 20em;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #card-group2 .card-details{
+        margin-top: 280px !important;
+        font-size: 11px;
+    }
+
+    #card-group2 p{
+        padding: 2px;
+    }
+
+    #card-group2 .card-info{
+        margin-top: 80px;
+    }
+
+    #card-group2 .card-innertext{
+        right: 10px;
+        margin-left: auto;
+    }
 }
 
 .cardbox9{
@@ -870,6 +917,7 @@ main a{
     padding-left: 100px;
     background-color:white;
     font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
 }
 
 #card-group3 a{
@@ -882,11 +930,51 @@ main a{
 }
 
 #card-group3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    padding: 100px;
-    margin-top: 40px;
+    padding: 60px;
+    margin-top: 180px !important;
 }
 
+
+@media (max-width: 600px){
+    #card-group3{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+        gap: 10px;
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        /* box-sizing: border-box; */
+        row-gap: 200px;
+    }
+
+    .cardbox9,
+    .cardbox10,
+    .cardbox11,
+    .cardbox12{
+        height: 20em;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #card-group3 .card-details{
+        margin-top: 280px;
+        /* padding-top: 10px; */
+        font-size: 11px;
+    }
+
+    #card-group3 .card-info{
+        margin-top: 50px;
+    }
+
+    #card-group3 .card-innertext{
+        right: 10px;
+        margin-left: auto;
+    }
+}
 
 .cardbox13{
     height: 26em;
@@ -988,10 +1076,54 @@ main a{
     color: red;
 }
 
+#card-group4 .card-info{
+    margin-top: 400px;
+}
+
 #card-group4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 60px;
+    margin-top: 180px !important;
     gap: 30px;
-    padding: 100px;
-    margin-top: 40px;
+}
+
+@media (max-width: 600px){
+    #card-group4{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+        gap: 10px;
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        /* box-sizing: border-box; */
+        row-gap: 200px;
+    }
+
+    .cardbox13,
+    .cardbox14,
+    .cardbox15,
+    .cardbox16{
+        height: 20em;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #card-group4 .card-details{
+        margin-top: 280px;
+        /* padding-top: 10px; */
+        font-size: 11px;
+    }
+
+    #card-group4 .card-info{
+        margin-top: 300px !important;
+    }
+
+    #card-group4 .card-innertext{
+        right: 10px;
+        margin-left: auto;
+    }
 }
 
 
@@ -1004,14 +1136,14 @@ main a{
     background-position: center;
     width: auto;
     height: 950px;
-    margin-top: 100px;
+    margin-top: 200px;
     padding: 25%;
     cursor: pointer;
 }
 
-.semi-annual .words{
+/* .semi-annual .words{
 
-}
+} */
 .semi-annual p{
     color: #ffffff;
     display: flex;
