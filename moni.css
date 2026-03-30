@@ -19,8 +19,7 @@
 }
 
 /* body{
-    background: var(--bg-color);
-    color: var(--text-color);
+    overflow: hidden;
 } */
 
 
@@ -481,9 +480,10 @@ main a{
 
 
 #card-group{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    padding: 100px;
+    padding: 60px;
     margin-top: 100px;
     /* background-color: #f9e2e7; */
 }
@@ -502,7 +502,7 @@ main a{
 
 .cardbox1{ 
     height: 26em;
-    width: 20em;
+    width: 100%;
     transition: 0.3s ease;
     background-image: url(./card-images/black\ gown.jpg);
     background-size: cover;
@@ -513,7 +513,7 @@ main a{
 .cardbox1:hover{
     
     height: 26em;
-    width: 20em;
+    width: 100%;
     border-radius: 20px;
     transform: scale(1.05);
     background-image: url(./card-images/black\ gown2.jpg);
@@ -524,7 +524,7 @@ main a{
 }
 .cardbox2{
     height: 26em;
-    width: 20em;
+    width: 100%;
     transition: 0.3s ease;
     /* border-radius: 20px; */
     /* border: none; */
@@ -536,7 +536,7 @@ main a{
 
 .cardbox2:hover{
     height: 26em;
-    width: 20em;
+    width: 100%;
     transform: scale(1.05);
     border-radius: 20px;
     /* border: none; */
@@ -547,7 +547,7 @@ main a{
 }
 .cardbox3{
     height: 26em;
-    width: 20em;
+    width: 100%;
     transition: 0.5s ease;
     background-image: url(./card-images/hoodie1.jpg);
     background-size: cover;
@@ -557,7 +557,7 @@ main a{
 
 .cardbox3:hover{
     height: 26em;
-    width: 20em;
+    width: 100%;
     transform: scale(1.05);
     border-radius: 20px;
     /* border: none; */
@@ -568,7 +568,7 @@ main a{
 }
 .cardbox4{
     height: 26em;
-    width: 20em;
+    width: 100%;
     transition: 0.5s ease;
     background-image: url(./card-images/jumpsuit.jpg);
     background-size: cover;
@@ -577,7 +577,7 @@ main a{
 }
 .cardbox4:hover{
     height: 26em;
-    width: 20em;
+    width: 100%;
     transform: scale(1.05);
     border-radius: 20px;
     /* border: none; */
@@ -624,6 +624,40 @@ main a{
 #card-group a:hover{
     color: red;
     text-decoration: underline;
+}
+
+@media (max-width: 600px){
+    #card-group{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+        gap: 10px;
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        /* box-sizing: border-box; */
+        row-gap: 200px;
+    }
+
+    .cardbox1,
+    .cardbox2,
+    .cardbox3,
+    .cardbox4{
+        height: 20em;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #card-group .card-details{
+        margin-top: 280px;
+        /* padding-top: 10px; */
+        font-size: 11px;
+    }
+
+    #card-group .card-innertext{
+        right: 10px;
+        margin-left: auto;
+    }
 }
 
 
