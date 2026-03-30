@@ -478,28 +478,6 @@ main a{
     }
 }
 
-
-#card-group{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 60px;
-    margin-top: 100px;
-    /* background-color: #f9e2e7; */
-}
-
-#card-group .card-details{
-    margin-top: 395px;
-    padding-top: 20px;
-}
-
-.fa-star{
-    color: orange;
-}
-
-
-
-
 .cardbox1{ 
     height: 26em;
     width: 100%;
@@ -588,6 +566,23 @@ main a{
 }
 
 
+#card-group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 60px;
+    margin-top: 100px;
+    /* background-color: #f9e2e7; */
+}
+
+#card-group .card-details{
+    margin-top: 395px;
+    padding-top: 20px;
+}
+
+.fa-star{
+    color: orange;
+}
 
 #card-group .card-innertext{
     position: absolute;
@@ -597,16 +592,6 @@ main a{
     font-weight: 500;
     background-color: white;
 }
-
-/* #card-group .hearts{
-    margin-left: 290px;
-    margin-top: 10px;
-    cursor: pointer;
-    color: red;
-} */
-
-
-
 
 #card-group  p{
     margin-top: 110%;
@@ -749,6 +734,10 @@ main a{
     margin-top: 180px !important;
 }
 
+#card-group2 .card-info{
+    padding-top: 20px;
+}
+
 #card-info{
     margin-top: auto;
 }
@@ -809,8 +798,8 @@ main a{
         background-position: center;
     }
 
-    #card-group2 .card-details{
-        margin-top: 280px !important;
+    #card-group2 .card-info{
+        margin-top: 60px !important;
         font-size: 11px;
     }
 
@@ -819,7 +808,7 @@ main a{
     }
 
     #card-group2 .card-info{
-        margin-top: 55px;
+        margin-top: 30px;
     }
 
     #card-group2 .card-innertext{
@@ -960,15 +949,12 @@ main a{
         background-position: center;
     }
 
-    #card-group3 .card-details{
-        margin-top: 280px;
+    #card-group3 .card-info{
+        margin-top: 60px;
         /* padding-top: 10px; */
         font-size: 11px;
     }
 
-    #card-group3 .card-info{
-        margin-top: 50px;
-    }
 
     #card-group3 .card-innertext{
         right: 10px;
@@ -1078,13 +1064,15 @@ main a{
 
 #card-group4 .card-info{
     margin-top: 400px;
+    padding-top: 20px;
 }
+
 
 #card-group4{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 60px;
-    margin-top: 180px !important;
+    margin-top: 100px !important;
     gap: 30px;
 }
 
@@ -1110,14 +1098,10 @@ main a{
         background-position: center;
     }
 
-    #card-group4 .card-details{
-        margin-top: 280px;
+    #card-group4 .card-info{
+        margin-top: 60px;
         /* padding-top: 10px; */
         font-size: 11px;
-    }
-
-    #card-group4 .card-info{
-        margin-top: 300px !important;
     }
 
     #card-group4 .card-innertext{
