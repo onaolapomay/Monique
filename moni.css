@@ -1362,6 +1362,39 @@ main a{
     text-decoration: underline 2px;
 }
 
+@media (max-width: 768px) {
+    .shopTheLatest {
+        height: auto;
+        padding: 15px;
+    }
+
+    .shopTheLatest h1 {
+        font-size: 22px;
+    }
+
+    .shopCardImg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .shopTheLatest .card {
+        width: 100%;
+    }
+
+    .shopTheLatest .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .shopTheLatest .card p {
+        font-size: 14px;
+        position: static;
+        padding-top: 5px;
+    }
+}
+
 .lotion{
     margin-top: 5vh;
     background-image: url(./backgd-img/tease\ ulined\ demi\ bra.jpg);
