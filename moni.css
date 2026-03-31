@@ -960,6 +960,45 @@ main a{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+@media (max-width: 768px) {
+    .semi-annual h3 {
+        font-size: 80px;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .semi-annual h1 {
+        justify-content: center;
+        font-size: 35px;
+    }
+
+    .semi-annual h5 {
+        margin-right: 0;
+        justify-content: center;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .semi-annual p {
+        justify-content: center;
+        margin-top: -50%;
+    }
+
+    .semi-annual h4 {
+        justify-content: center;
+    }
+
+    .border-outline {
+        margin-right: 0;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .border {
+        width: 100%;
+    }
+}
+
 
 
 .limited-time{
