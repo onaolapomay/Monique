@@ -961,9 +961,16 @@ main a{
 }
 
 @media (max-width: 768px) {
-    .semi-annual h3 {
-        font-size: 80px;
-        margin-right: 0;
+    .semi-annual {
+        height: auto;
+        min-height: 100vh;
+        padding: 10%;
+        margin-top: 50px;
+        background-position: center;
+    }
+
+    .semi-annual p {
+        margin-top: 0;
         justify-content: center;
     }
 
@@ -972,16 +979,24 @@ main a{
         font-size: 35px;
     }
 
+    .semi-annual h3 {
+        font-size: 70px;
+        margin-right: 0;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .semi-annual span {
+        font-size: 35px;
+        padding-top: 10px;
+    }
+
     .semi-annual h5 {
         margin-right: 0;
         justify-content: center;
         font-size: 16px;
         text-align: center;
-    }
-
-    .semi-annual p {
-        justify-content: center;
-        margin-top: -50%;
+        line-height: 2rem;
     }
 
     .semi-annual h4 {
@@ -991,13 +1006,18 @@ main a{
     .border-outline {
         margin-right: 0;
         justify-content: center;
-        padding: 10px;
+        width: 100%;
     }
 
     .border {
         width: 100%;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
+
 
 
 
