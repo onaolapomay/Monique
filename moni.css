@@ -1704,6 +1704,14 @@ footer span{
         margin-top: 20px;
     }
 
+    .Contact-social .help-details h4{
+        text-align: center;
+    }
+
+    .Contact-social-contents .order h4{
+        text-align: center !important;
+    }
+
     footer {
         padding: 20px;
         text-align: center;
