@@ -962,8 +962,8 @@ main a{
 
 @media (max-width: 768px) {
     .semi-annual {
-        height: auto !important;
-        min-height: 100vh;
+        height: 100vh !important;
+        min-height: unset;
         padding: 10%;
         margin-top: 50px;
         background-size: cover;
@@ -1054,6 +1054,27 @@ main a{
     margin-top: -10px;
 }
 
+@media (max-width: 768px) {
+    .content {
+        padding: 40px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .content h5 {
+        margin-left: 0;
+        font-size: 40px;
+    }
+
+    .content h6 {
+        margin-left: 0;
+    }
+
+    .content p {
+        margin-top: 0;
+    }
+}
+
 .con-box{
     background-color: #F4EBDC;
 }
@@ -1131,15 +1152,27 @@ main a{
     font-family: monospace;
 }
 
-
-@media (max-width: 768px){
-    .slider-wrapper{
-        margin: 0 10px 40px;
+@media (max-width: 768px) {
+    .slider-wrapper {
+        margin: 0 20px 30px;
+        min-height: 50vh;
     }
-    .slider-wrapper .swiper-slide-button{
-        display: none;
+
+    .card-item {
+        max-width: 200px;
+        max-height: auto;
+    }
+
+    .card-list .card-item .user-image {
+        height: 180px;
+    }
+
+    .con-box h1 {
+        font-size: 20px;
+        padding-top: 3vh;
     }
 }
+
 
 
 .four-panties{
