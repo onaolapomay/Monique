@@ -962,11 +962,12 @@ main a{
 
 @media (max-width: 768px) {
     .semi-annual {
-        height: auto;
+        height: auto !important;
         min-height: 100vh;
         padding: 10%;
         margin-top: 50px;
-        background-position: center;
+        background-size: cover;
+        background-position: top center;
     }
 
     .semi-annual p {
