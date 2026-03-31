@@ -1458,10 +1458,12 @@ main a{
 
     .lotion-details p {
         font-size: 16px;
+        text-align: start;
     }
 
     .lotion-details h6 {
         font-size: 12px;
+        font-weight: 300;
     }
 }
 
